@@ -1,0 +1,16 @@
+server:
+  port: 9999
+spring:
+  datasource:
+    hikari:
+      max-lifetime: 3000
+      connection-timeout: 60000
+      validation-timeout: 3000
+      idle-timeout: 30000
+      minimum-idle: 10
+      maximum-pool-size: 10
+      connection-test-query: select 1
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/blog_system
+    username: root
+    password: 114514
